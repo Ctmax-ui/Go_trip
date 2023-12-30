@@ -38,11 +38,11 @@
             <!--  navigation-->
             <nav class="navigation-menu">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Explore</a></li>
-                    <li><a href="#">Pages</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./explore.html">Explore</a></li>
+                    <li><a href="./pages.html">Pages</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
                 </ul>
 
                 <div class="Serch-icon-number">
@@ -55,16 +55,9 @@
 
             <!-- responsive button when display width 990px -->
             <div class="responsive-header-button">
-
-
-                <input type="checkbox" id="toggle">
-
-                <label for="toggle" class="toggle-btn">
-
+                <button id="nav-toggler-btn">
                     <i class="fa-solid fa-bars"></i>
-                </label>
-
-
+                </button>
             </div>
 
         </div>
@@ -486,11 +479,7 @@
     <!-- footer start -->
 
     <footer>
-
-
         <div class="footer-container">
-
-
             <div class="footer-box-one">
                 <h6>Contact Us</h6>
 
@@ -598,23 +587,17 @@
 
 
 
-
-
-
-
-
-
-
-
-    <script src="./js/jquarymmmmm.js"></script>
     <script src="./js/jquery.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/index.js"></script>
 
     <script>
 
         window.addEventListener('scroll', function () {
             let header = document.querySelector('header');
+            let sec = document.querySelector('.navigation-menu');
             header.classList.toggle('sticky', window.scrollY > 0);
+            sec.classList.toggle('sticky', window.scrollY > 0);
         });
     </script>
 

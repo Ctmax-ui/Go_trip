@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travle Layout</title>
+
+    <link href="//fonts.googleapis.com/css2?family=Roboto:wght@300;400&amp;display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+
+
+    <header id="main-header">
+        <div class="header-container">
+
+
+            <!-- logo -->
+            <div class="logo">
+                <h1>
+                    <a href="#" id="col-changer-logo">
+                        <span class="fa fa-map-signs"></span>
+                        Go Trip
+                    </a>
+                </h1>
+
+            </div>
+
+            <!--  navigation-->
+            <nav class="navigation-menu">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./explore.html">Explore</a></li>
+                    <li><a href="./pages.html">Pages</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+
+                <div class="Serch-icon-number">
+                    <a href="#"><span class="fa fa-phone favi-number"></span>+(21)-234-9999</a>
+                    <a href="#"><span class="fa fa-search mr-2"></span></a>
+                </div>
+
+            </nav>
+
+
+            <!-- responsive button when display width 990px -->
+            <div class="responsive-header-button">
+                <button id="nav-toggler-btn">    
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+        </div>
+    </header>
+    <!-- HEADER END HERE -->
+    <section style="height: 100vh;background: #104863;">
+        <h2 style="font-size: 5rem; color: aliceblue; padding-top: 50%;">pages</h2>
+    </section>
+
+
+    <!-- footer start -->
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-box-one">
+                <h6>Contact Us</h6>
+
+                <ul>
+                    <li>
+                        <p><span class="fa fa-map-marker"></span> California, #32841 block, #221DRS 75 West Rock, Maple
+                            Building, UK.</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li><a href="#"><span class="fa fa-phone favi-number"></span>+(21)-234-9999</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><span class="fa fa-envelope-open"></span> Exterior-mail@support.com</a></li>
+                </ul>
+
+
+
+
+                <div class="social-media">
+
+                    <a href="#" id="facebook-icon"><span class="fa-brands fa-facebook-f"></span></a>
+                    <a href="#" id="twitter-icon"><span class="fa-brands fa-twitter"></span></a>
+                    <a href="#" id="instagram-icon"><span class="fa-brands fa-instagram"></span></a>
+                    <a href="#" id="google-icon"><span class="fa-brands fa-google-plus-g"></span></a>
+                    <a href="#" id="linkdin-icon"><span class="fa-brands fa-linkedin-in"></span></a>
+                </div>
+            </div>
+
+
+
+            <div class="footer-box-two">
+                <h6>Category</h6>
+
+
+                <ul>
+                    <li><a href="#">Event Travel</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Holiday Trip</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Group Tour</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Package Holiday</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Gap Year</a></li>
+                </ul>
+
+            </div>
+
+
+
+
+            <div class="footer-box-three">
+                <h6>Latest Gallery</h6>
+
+                <div class="footer-images-collection">
+                    <a href="#"><img src="./res/1st-image-showcase.jpg" alt=""></a>
+                    <a href="#"><img src="./res/5th-image-showcase.jpg" alt=""></a>
+                    <a href="#"><img src="./res/nziland.jpg" alt=""></a>
+                    <a href="#"><img src="./res/3rd-image-showcase.jpg" alt=""></a>
+                    <a href="#"><img src="./res/2nd-image-showcase.jpg" alt=""></a>
+                    <a href="#"><img src="./res/4th-image-showcase.jpg" alt=""></a>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="footer-box-four">
+
+                <h6>Travel & Trip</h6>
+
+                <ul>
+                    <li><a href="#">Bahamas</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Cambodia</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Dominica</a></li>
+                </ul>
+                <ul>
+                    <li> <a href="#">Egypt</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Germany</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+
+        <div class="line"></div>
+        <div class="copyright-box">
+
+            &copy 2020 Go Trip. All rights reserved | Designed by Dave
+        </div>
+    </footer>
+
+
+
+    <script>
+
+        window.addEventListener('scroll', function () {
+            let header = document.querySelector('header');
+            let sec = document.querySelector('.navigation-menu');
+            header.classList.toggle('sticky', window.scrollY > 0);
+            sec.classList.toggle('sticky', window.scrollY > 0);
+        });
+    </script>
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>
